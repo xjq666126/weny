@@ -1,0 +1,24 @@
+{
+	// "extends": "@vue/tsconfig/tsconfig.json",
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": true,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"ignoreDeprecations": "5.0",
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"lib": ["esnext", "dom"],
+		"baseUrl": ".",
+		"types": ["wechat-miniprogram", "@dcloudio/types"]
+	},
+	"vueCompilerOptions": {
+		"plugins": ["@uni-helper/uni-app-types/volar-plugin"]
+	},
+	"include": ["src/**/*.tsx", "src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue", "vite.config.ts"],
+	"exclude": ["node_modules"]
+}
